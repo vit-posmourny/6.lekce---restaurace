@@ -1,0 +1,104 @@
+.hero-section {
+    display: flex;
+    width: 1920px;
+    height: 60vh;
+    background-image: url('Images/main_image.jpg');
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta {
+    display: grid;
+    justify-items: center;
+    font-family: "Times New Roman";
+    font-size: 2.5em;
+    white-space: nowrap;
+}
+
+.btn-cta-styled{
+    border: 0;
+    line-height: 2.5;
+    padding: 0 27px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 6px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(
+            to top left,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2) 30%,
+            rgba(0, 0, 0, 0)
+    );
+
+}
+
+.section1 {
+    /*width: 1246px;*/
+    height: 412px;
+    margin-left: 18%;
+    margin-right: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section1 h2 {
+    font-family: "Times New Roman";
+    position: relative;
+}
+
+.section1 h3 {
+    font-family: "Playfair Display";
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+.section1 p {
+    font-family: "Times New Roman";
+    display: inherit;
+    font-size: 1.2em;
+    margin: 2em 0em 0em 2em;
+    line-height: 1.8;
+}
+
+.section1 div {
+    display:flex;
+}
+
+.menu {
+    display: flex;
+    height: 638px;
+    width: 1920px;
+    position: static;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.container-text {
+    font-size: 2.5em;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.reviews {
+    display: flex;
+    height: 401px;
+    width: 1920px;
+    background-color: bisque;
+}
