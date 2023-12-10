@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .hero-section {
     display: flex;
     width: 1920px;
@@ -17,74 +21,83 @@
 }
 
 .btn-cta-styled{
+    font-family: "Playfair 9pt Light";
+    font-weight: lighter;
+    align-self: center;
     border: 0;
-    line-height: 2.5;
-    padding: 0 27px;
-    font-size: 1rem;
+    line-height: 2.1;
+    padding: 0 32px;
+    font-size: 1.6rem;
     text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
+    color: #ffffff;
+    /*text-shadow: 1px 1px 1px #000;*/
     border-radius: 6px;
-    background-color: rgba(220, 0, 0, 1);
+    background-color: rgba(244,67,54,1);
     background-image: linear-gradient(
             to top left,
             rgba(0, 0, 0, 0.2),
-            rgba(0, 0, 0, 0.2) 30%,
-            rgba(0, 0, 0, 0)
-    );
-
+            /*rgba(0, 0, 0, 0.1) 50%,*/
+            rgba(0, 0, 0, 0));
 }
 
 .section1 {
-    /*width: 1246px;*/
-    height: 412px;
-    margin-left: 18%;
-    margin-right: 18%;
+    min-height: 410px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    box-sizing: border-box;
+    width: 1920px;
+}
+
+.section1 div {
+    display:flex;
+    margin-left: 126px;
+}
+
+.section1 article {
+    text-align: center;
+    margin-right: 126px;
 }
 
 .section1 h2 {
     font-family: "Times New Roman";
     position: relative;
+    font-weight: lighter;
+    font-size: 2em;
+    color: #333333;
 }
 
 .section1 h3 {
     font-family: "Playfair Display";
-    display: flex;
     justify-content: space-evenly;
     font-size: 1.2em;
     letter-spacing: 1px;
+    color: #616161;
+    font-weight: lighter;
 }
 
 .section1 p {
     font-family: "Times New Roman";
     display: inherit;
     font-size: 1.2em;
-    margin: 2em 0em 0em 2em;
     line-height: 1.8;
-}
-
-.section1 div {
-    display:flex;
+    color: #616161;
 }
 
 .menu {
     display: flex;
     height: 638px;
     width: 1920px;
-    position: static;
 }
 
-.container {
+.menu .container {
     position: relative;
     text-align: center;
     color: white;
 }
 
-.container-text {
+.menu .container-text {
     font-size: 2.5em;
     text-decoration: underline;
     text-underline-offset: 4px;
@@ -98,7 +111,117 @@
 
 .reviews {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     height: 401px;
     width: 1920px;
     background-color: bisque;
+}
+
+.reviews span {
+    font-family: "Times New Roman";
+    font-size: 2em;
+}
+
+.reviews .containers {
+    display: flex;
+    justify-items: center;
+}
+
+.reviews .container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.8em;
+    max-width: 575px;
+    height: 212px;
+    background-color: #ffffff;
+    color: #898787;
+    text-align: center;
+    padding-right: 90px;
+    padding-left: 90px;
+    padding-top: 5px;
+    margin-inline: 1.3em;
+}
+
+.container h3 {
+    margin-block-end: 0;
+    font-size: 1.3em;
+    font-weight: lighter;
+}
+
+.section3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    width: 1920px;
+    height: 669px;
+}
+
+.section3 article {
+    display: flex;
+    flex-direction: column;
+    margin-left: 85px;
+    width: 37%;
+}
+
+.section3 .title-large {
+    font-family: "Times New Roman";
+    color: #333333;
+    font-size: 2.4em;
+    padding-block-end: 1em;
+}
+
+.section3 .title-small {
+    font-family: "Times New Roman";
+    font-size: 1.4em;
+    color: #2c2c2c;
+    padding-block-end: 0.5em;
+}
+
+.section3 p {
+    color: #616161;
+    font-size: 1.1em;
+}
+
+.section3 .btn-cta-styled {
+    margin-left: 2px;
+}
+
+footer {
+    width: 1920px;
+    height: 371px;
+    background-color: #2F3235;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*align-content: center;*/
+}
+
+footer article {
+    display: flex;
+}
+
+.footer-section {
+    display: block;
+    color: #fff;
+}
+
+.footer-section h1 {
+    font-family: "Times New Roman";
+    font-weight: lighter;
+    font-size: 1.6em;
+    padding-left: 5px;
+}
+
+.footer-section div {
+    display: flex;
+    align-items: flex-end;
+    font-family: "Playfair Display";
+}
+.footer-section span {
+    margin-left: 10px;
+    margin-right: 10px;
 }
