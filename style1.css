@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 
 .hero-section {
@@ -109,6 +109,10 @@
     transform: translate(-50%, -50%);
 }
 
+.menu a {
+    color: #fff;
+}
+
 .reviews {
     display: flex;
     flex-direction: column;
@@ -202,11 +206,14 @@ footer {
 
 footer article {
     display: flex;
+    justify-content: center;
+    padding-top: 20px;
 }
 
 .footer-section {
     display: block;
     color: #fff;
+    margin-right: 100px;
 }
 
 .footer-section h1 {
@@ -220,8 +227,33 @@ footer article {
     display: flex;
     align-items: flex-end;
     font-family: "Playfair Display";
+    margin-bottom: 11px;
 }
-.footer-section span {
+
+.icon-clock {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.icon-other {
+    margin-right: 8px;
+}
+
+.footer-section p {
+    line-height: 2em;
+    margin-block-start: 1.4em;
+}
+
+.footer-section .div-store-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-section br {
+    height: 0.5em;
+}
+
+.footer-section a {
+    color: #fff;
 }
